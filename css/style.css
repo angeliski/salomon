@@ -1,0 +1,58 @@
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+body, #app {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  body {
+      background-image: url('https://source.unsplash.com/random');
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  #app {
+    width: 50%;
+    text-align: center;
+    position: relative;
+    top: -50px;
+  }
+  
+  h1.quote {
+      color: #fff;
+      font-size: 5em;
+  }
+  h2.author {
+    color: #aeaeae;
+  }
+
+  footer {
+    opacity: 0.5;
+    padding-top: 0.5rem;
+    position: absolute;
+    bottom: 15px;
+    text-align: right;
+    font-family: 'Helvetica Neue', arial, sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    color: #aeaeae;
+    line-height: 16px;
+  }
+  
+  footer:hover {
+    opacity: 1;
+  }
+  
+  footer a {
+    color: #969696;
+    font-weight: bold;
+  }
