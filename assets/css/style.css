@@ -35,6 +35,18 @@ body, #app {
     color: #aeaeae;
   }
 
+  .overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background-image: url(../img/overlay.png);
+    background-size: 100% 100%;
+    opacity: 1;
+}
+
   footer {
     opacity: 0.5;
     padding-top: 0.5rem;
@@ -46,10 +58,14 @@ body, #app {
     font-size: 11px;
     color: #aeaeae;
     line-height: 16px;
+    z-index: 3;
+    transition: all ease-in-out .5s;
   }
   
   footer:hover {
     opacity: 1;
+    transform: scale(1.5);
+    color: white;
   }
   
   footer a {
